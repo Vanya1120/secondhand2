@@ -10,6 +10,7 @@
         <meta name="description" th:content="${@utils.description()}">
         <link rel="stylesheet" type="text/css" th:href="@{/common/css/style.css?v={v}(v=${@utils.version()})}">
         <link rel="stylesheet" th:href="@{/css/survey_diabetes/style.css}">
+        <link rel="stylesheet" th:href="@{/front/css/member/login.css}">
         <link rel="stylesheet" type="text/css" th:each="cssFile : ${addCommonCss}"
               th:href="@{/common/css/{css}.css?v={v}(css=${cssFile}, v=${@utils.version()})}">
         <th:block layout:fragment="addCommonCss"></th:block>
